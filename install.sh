@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo apt-get install python-dev python3-dev ruby-dev libX11-dev libgtk-3-dev ncurses-dev ack-grep
+sudo apt-get install python-dev python3-dev ruby-dev libX11-dev libgtk-3-dev ncurses-dev ack-grep ctags
 cd ~/
 git clone https://github.com/vim/vim.git vim74
 cd vim74
