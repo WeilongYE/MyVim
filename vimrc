@@ -244,12 +244,12 @@ let NERDTreeMinimalUI=1
 " 删除文件时自动删除文件对应 buffer
 let NERDTreeAutoDeleteBuffer=1
 
-" 显示/隐藏 MiniBufExplorer 窗口
-map <Leader>bl :MBEToggle<cr>
-" buffer 切换快捷键
-map <Leader>bn :MBEbn<cr>
-map <Leader>bN :MBEbp<cr>
-map <Leader>bd :MBEbd<cr>
+"" 显示/隐藏 MiniBufExplorer 窗口
+"map <Leader>bl :MBEToggle<cr>
+"" buffer 切换快捷键
+"map <Leader>bn :MBEbn<cr>
+"map <Leader>bN :MBEbp<cr>
+"map <Leader>bd :MBEbd<cr>
 
 "" YCM 补全菜单配色
 "" 菜单
@@ -274,3 +274,21 @@ map <Leader>bd :MBEbd<cr>
 "let g:ycm_cache_omnifunc=0
 "" 语法关键字补全         
 "let g:ycm_seed_identifiers_with_syntax=1
+
+" Command Make will call make and then cwindow which
+" " opens a 3 line error window if any errors are found.
+" " If no errors, it closes any open cwindow.
+:command -nargs=* Make make <args> | cwindow 3
+" Automatically open, but do not go to (if there are errors) the quickfix /
+" location list window, or close it when is has become empty.
+"
+" Note: Must allow nesting of autocmds to enable any customizations for
+" quickfix
+" buffers.
+" Note: Normally, :cwindow jumps to the quickfix window if the command opens
+" it
+" (but not if it's already open). However, as part of the autocmd, this
+" doesn't
+" seem to happen.
+autocmd QuickFixCmdPost [^l]* nested cwindow
+autocmd QuickFixCmdPost    l* nested lwindow
