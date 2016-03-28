@@ -15,3 +15,8 @@ cp -r ~/MyVim/vim ~/.vim
 cp  ~/MyVim/vimrc ~/.vimrc
 cp -r ~/MyVim/indexer_files ~/.indexer_files
 cp -r ~/MyVim/indexer_files_tags ~/.indexer_files_tags
+
+#install ycm
+sudo apt-get install build-essential cmake
+cd ~/.vim/bundle/YouCompleteMe
+./install.py --clang-completer
