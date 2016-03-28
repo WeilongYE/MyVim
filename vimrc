@@ -146,7 +146,7 @@ nmap <Leader>tp :tprevious<CR>
 " 默认 --c++-kinds=+p+l，重新设置为 --c++-kinds=+p+l+x+c+d+e+f+g+m+n+s+t+u+v
 " 默认 --fields=+iaS 不满足 YCM 要求，需改为 --fields=+iaSl
 let g:indexer_ctagsCommandLineOptions="--c++-kinds=+p+l+x+c+d+e+f+g+m+n+s+t+u+v --fields=+iaSl --extra=+q"
-set tags+=~/.indexer_files_tags/src
+"set tags+=~/.indexer_files_tags/src
 "set tags+=~/.indexer_files_tags/stdcpp521
 
 " 设置 tagbar 子窗口的位置出现在主编辑区的左边 
@@ -260,6 +260,7 @@ let NERDTreeAutoDeleteBuffer=1
 "let g:ycm_complete_in_comments=1
 "" 允许 vim 加载 .ycm_extra_conf.py 文件，不再提示
 "let g:ycm_confirm_extra_conf=0
+"let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py'
 "" 开启 YCM 标签补全引擎
 "let g:ycm_collect_identifiers_from_tags_files=1
 "" 引入 C++ 标准库tags
