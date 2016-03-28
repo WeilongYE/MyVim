@@ -21,7 +21,7 @@ cp -r ~/MyVim/indexer_files_tags ~/.indexer_files_tags
 sudo apt-get install build-essential cmake
 git clone https://github.com/Valloric/YouCompleteMe.git
 cd ~/.vim/bundle/YouCompleteMe
-rm -rf .git
-rm -f .gitignore
 git submodule update --init --recursive
 ./install.py --clang-completer
+rm -rf .git
+rm -f .gitignore
