@@ -1,4 +1,5 @@
 #!/bin/bash
+#install vim
 sudo apt-get install python-dev python3-dev ruby-dev libX11-dev libgtk-3-dev ncurses-dev ack-grep ctags
 cd ~/
 git clone https://github.com/vim/vim.git vim74
@@ -18,5 +19,9 @@ cp -r ~/MyVim/indexer_files_tags ~/.indexer_files_tags
 
 #install ycm
 sudo apt-get install build-essential cmake
+git clone https://github.com/Valloric/YouCompleteMe.git
 cd ~/.vim/bundle/YouCompleteMe
+rm -rf .git
+rm -f .gitignore
+git submodule update --init --recursive
 ./install.py --clang-completer
