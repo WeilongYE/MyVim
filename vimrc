@@ -71,6 +71,9 @@ set cursorline
 " 高亮显示搜索结果
 set hlsearch
 
+"This unsets the "last search pattern" register by hitting return
+nnoremap <CR> :noh<CR><CR>
+
 " 禁止折行
 set nowrap
 
