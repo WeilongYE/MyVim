@@ -246,6 +246,8 @@ let NERDTreeShowHidden=1
 let NERDTreeMinimalUI=1
 " 删除文件时自动删除文件对应 buffer
 let NERDTreeAutoDeleteBuffer=1
+" 解决文件夹箭头乱码问题
+let NERDTreeDirArrows=0
 
 "" 显示/隐藏 MiniBufExplorer 窗口
 "map <Leader>bl :MBEToggle<cr>
