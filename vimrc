@@ -298,3 +298,6 @@ let NERDTreeDirArrows=0
 " seem to happen.
 autocmd QuickFixCmdPost [^l]* nested cwindow
 autocmd QuickFixCmdPost    l* nested lwindow
+
+" set ctrlp
+set runtimepath^=~/.vim/bundle/ctrlp.vim
