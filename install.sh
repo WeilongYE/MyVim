@@ -1,6 +1,6 @@
 #!/bin/bash
 #install vim
-sudo apt-get install python-dev python3-dev ruby-dev libX11-dev libgtk-3-dev ncurses-dev ack-grep ctags
+sudo apt-get install python-dev python3-dev ruby-dev libX11-dev libgtk-3-dev ncurses-dev ack-grep exuberant-ctags
 cd ~/
 git clone https://github.com/vim/vim.git vim74
 cd vim74
