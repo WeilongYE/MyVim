@@ -7,6 +7,7 @@ endif
 "###########################################################################
 " define <Leader>
 let mapleader=";"
+let g:ackprg = "ag --vimgrep"
 
 filetype on
 filetype plugin on
