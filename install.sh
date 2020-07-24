@@ -7,3 +7,4 @@ cd ~/MyVim
 git checkout new
 cp -r ~/MyVim/vim ~/.vim
 cp  ~/MyVim/vimrc ~/.vimrc
+rm -rf ~/MyVim
