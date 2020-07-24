@@ -1,2 +1,2 @@
-wget -q0- https://github.com/WeilongYE/MyVim/blob/new/install.sh | sh -x
+wget -q0 - https://raw.github.com/WeilongYE/MyVim/new/install.sh | sh -x
 
