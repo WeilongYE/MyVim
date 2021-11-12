@@ -308,3 +308,5 @@ autocmd QuickFixCmdPost    l* nested lwindow
 set runtimepath^=~/.vim/bundle/ctrlp
 
 set t_BE=
+
+set encoding=utf-8
