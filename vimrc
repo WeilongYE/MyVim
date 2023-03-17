@@ -44,7 +44,7 @@ execute pathogen#infect()
 set background=dark
 "colorscheme molokai
 "colorscheme solarized
-colorscheme adobe
+colorscheme darkblue
 "set background=light
 "colorscheme autumn
 "colorscheme vcbc
