@@ -5,7 +5,7 @@ cd ~
 git clone https://github.com/WeilongYE/MyVim.git 
 cd ~/MyVim
 git checkout new
-cp -r ~/MyVim/vim ~/.vim
+mv ~/MyVim/vim ~/.vim
 cp  ~/MyVim/vimrc ~/.vimrc
 cd ~
 rm -rf ~/MyVim
